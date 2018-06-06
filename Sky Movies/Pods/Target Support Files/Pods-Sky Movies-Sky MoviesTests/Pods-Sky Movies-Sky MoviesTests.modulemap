@@ -1,0 +1,6 @@
+module Pods_Sky_Movies_Sky_MoviesTests {
+  umbrella header "Pods-Sky Movies-Sky MoviesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

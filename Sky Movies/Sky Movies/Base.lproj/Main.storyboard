@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lwo-AJ-M0x">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SKY Movies-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MoviesVC" customModule="Sky_Movies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="m22-Uo-JAF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.090196078430000007" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="CyJ-HN-kPS">
+                                    <size key="itemSize" width="130" height="230"/>
+                                    <size key="headerReferenceSize" width="50" height="30"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="movieCell" id="nlc-LC-VZd" customClass="MovieCVCell" customModule="Sky_Movies" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="45" width="130" height="230"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="230"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example" translatesAutoresizingMaskIntoConstraints="NO" id="tUq-Li-syK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="koF-Jr-mZH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Movie" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVZ-qe-xMz">
+                                                    <rect key="frame" x="0.0" y="208" width="130" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="KVZ-qe-xMz" secondAttribute="trailing" id="ELB-h3-dbS"/>
+                                            <constraint firstAttribute="trailing" secondItem="tUq-Li-syK" secondAttribute="trailing" id="O7u-dT-N1J"/>
+                                            <constraint firstItem="tUq-Li-syK" firstAttribute="top" secondItem="nlc-LC-VZd" secondAttribute="top" id="OhO-i2-dfU"/>
+                                            <constraint firstAttribute="bottom" secondItem="KVZ-qe-xMz" secondAttribute="bottom" constant="2" id="lrh-1s-KKr"/>
+                                            <constraint firstItem="KVZ-qe-xMz" firstAttribute="leading" secondItem="nlc-LC-VZd" secondAttribute="leading" id="qR8-hN-6kn"/>
+                                            <constraint firstItem="tUq-Li-syK" firstAttribute="leading" secondItem="nlc-LC-VZd" secondAttribute="leading" id="uSe-sQ-MBq"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="movieImageView" destination="tUq-Li-syK" id="7yX-kJ-JwV"/>
+                                            <outlet property="titleMovieLabel" destination="KVZ-qe-xMz" id="1Bo-Sd-f0B"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="MovieHeaderView" id="Cof-LT-xGH" customClass="MovieHeaderView" customModule="Sky_Movies" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJo-Rq-O2x">
+                                            <rect key="frame" x="15" y="5" width="290" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.066666666669999999" green="0.090196078430000007" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="OJo-Rq-O2x" firstAttribute="leading" secondItem="Cof-LT-xGH" secondAttribute="leading" constant="15" id="11G-Xp-UeF"/>
+                                        <constraint firstAttribute="bottom" secondItem="OJo-Rq-O2x" secondAttribute="bottom" constant="5" id="5II-3D-nHV"/>
+                                        <constraint firstItem="OJo-Rq-O2x" firstAttribute="top" secondItem="Cof-LT-xGH" secondAttribute="top" constant="5" id="B7g-uO-exg"/>
+                                        <constraint firstAttribute="trailing" secondItem="OJo-Rq-O2x" secondAttribute="trailing" constant="15" id="jQJ-BX-6AT"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="titleCollectionLabel" destination="OJo-Rq-O2x" id="eTf-1m-Oxv"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="7y8-Vv-AOW"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ktt-aH-Kvf"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.090196078430000007" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m22-Uo-JAF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2ts-Co-dIu"/>
+                            <constraint firstItem="m22-Uo-JAF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UWe-mr-ejb"/>
+                            <constraint firstItem="m22-Uo-JAF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Z7P-VZ-Zvq"/>
+                            <constraint firstItem="m22-Uo-JAF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lAU-Cq-KpT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SKY Movies" id="3eC-LK-oCP"/>
+                    <connections>
+                        <outlet property="moviesCollectionView" destination="m22-Uo-JAF" id="s37-YA-CXd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134.375" y="133.09859154929578"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wwX-sI-Ky0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lwo-AJ-M0x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="vKn-18-R5a">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.066666666666666666" green="0.090196078431372548" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cT8-FN-hOe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSo-FZ-8NA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="example" width="1280" height="1920"/>
+    </resources>
+</document>

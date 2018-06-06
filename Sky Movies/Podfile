@@ -1,0 +1,14 @@
+project 'Sky Movies.xcodeproj'
+platform :ios, '9.0'
+
+target 'Sky Movies' do
+   
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'SwiftyJSON'
+
+  target 'Sky MoviesTests' do
+
+  end
+
+end

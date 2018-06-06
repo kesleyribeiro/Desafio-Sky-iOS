@@ -1,0 +1,1169 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		054020A0B396F220718220B72497D72B /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE8B0548130D2417BDC43D242B46C7 /* MultipartFormData.swift */; };
+		1C76BA23D195C60B9676FAB77947CF8C /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6D590D5BA5E688EE2F4652E3A5921 /* Request+AlamofireImage.swift */; };
+		1D95EF9DC96E5E365208B6192F0BA009 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D849AC4D95B8CDBBE5A2E4C12F0A15 /* SwiftyJSON.swift */; };
+		23CF43A5E50F725F17761FF094D0BD1F /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FA77365CFE08247C88F3462FEA7004 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24D84E7CCF5B9E6D0D8BE6897FFF4609 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E763097792DC292696672156C6D3C /* ResponseSerialization.swift */; };
+		2A48A0AEBD6CE04F50294F65CF229D16 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305F701868DF62673D6A48C9D02DEC22 /* Image.swift */; };
+		34350F31C1FDEEDD5430DB938A2495BE /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B4917C858C0BF406AE3DF365CD5BF8 /* AFIError.swift */; };
+		3573F6983068A5EDA92B31E566438B22 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F49086748FB1D6AD1AFFBBAFD6407D /* Timeline.swift */; };
+		3B005DF0362CD13FBDCD143C8887C5EF /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 042BCE060E3F618BD0E4B1A4B009C46B /* AlamofireImage-dummy.m */; };
+		43C81E7C4ECCAD860D6506996907CEE8 /* Pods-Sky Movies-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E74F3275E8FFD812648A3B211D27BCA5 /* Pods-Sky Movies-dummy.m */; };
+		4ED2910EA89E273393659FFD5EF3EB93 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C38223090B5E259EC935A8B69206C0 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4FB3A851B716BAA32464F3072C56D10B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC2E870B393137302C4445CC3439E1D /* Validation.swift */; };
+		540780C279ED3C9BB892AF2C378496EA /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6C101F7CC5896CA7507660B2990A1C /* Alamofire-dummy.m */; };
+		60B899F8FAC6F674B0EE6F5A69E2B2A3 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F707BA4ACFFA752A2DC731B53CCA6D2 /* DispatchQueue+Alamofire.swift */; };
+		715EA238760F6BB6DF740A83264F6C21 /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3C52E20BAE47A2ADF226FB400D13F /* UIImage+AlamofireImage.swift */; };
+		7B02E84B6522A96BC9747947007EE132 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2B35D853FE38D795D630C845166AC /* ParameterEncoding.swift */; };
+		7D5D435C32B025FECAC1B4BEA1173DDF /* Pods-Sky Movies-Sky MoviesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D09DE9CA9EBB6EF6FBAF598E58C1E9 /* Pods-Sky Movies-Sky MoviesTests-dummy.m */; };
+		7E3D3794AEC0F0DE985CB848BF68EC01 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B756E3628D8F92F311C12D5A8C64DF4A /* AFError.swift */; };
+		7FFC212EDF93CAF60E7F16A1373B3655 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7A3694E5677182734463F3894528B /* Notifications.swift */; };
+		83813BDF00D751059AB1A1045FB7A240 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0478E74F56F0F4677AAD2B21009C086 /* Alamofire.swift */; };
+		83863CD37B6BFB6F42887C452A4DA288 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E312A20EA09631F9DA5B2C24105E06 /* ServerTrustPolicy.swift */; };
+		84154EEB4FB4748F509B8F6A47C90A3D /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B80CAD6EEED361D5D2EB281360B516 /* ImageFilter.swift */; };
+		87C91CE6F8535738E8740848E651678E /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB1BB0491DAF3D886A599EB5FB3E2A /* UIImageView+AlamofireImage.swift */; };
+		8E698D719D43B4A8713417AF20EFBBE4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB9277A4A56AD35DBA950C275AA24D4 /* Result.swift */; };
+		9519BA236F22FA7972DACB21A04EEB61 /* Pods-Sky Movies-Sky MoviesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3199664EFA2A7D61B10CFB43B08F49EB /* Pods-Sky Movies-Sky MoviesTests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		95638606564452201D545FA4119C270A /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4D22D093AACDB8CBB2185DB9B13B1 /* SessionDelegate.swift */; };
+		A6C26370A334B5FD8F89949AF13412CB /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8B264BCFABCC7355ABCCEF807E0CC1 /* SessionManager.swift */; };
+		B8B5384772F7C61A06DE9A2EC5224C22 /* Pods-Sky Movies-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0A198442E83C6B7B8290442763AF77 /* Pods-Sky Movies-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B929CA9E74943C99F4697DE31DD2233D /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3548CFF389ACDF45276B88CC722F4 /* NetworkReachabilityManager.swift */; };
+		BE589BDF033E4AD63C253F5248228021 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB0E3008F8669694FF3C4B603118E2 /* SwiftyJSON-dummy.m */; };
+		C1410248BF2B6C7ED479BFBC82BA905C /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4CDC69F76672A50046A540798C24AA /* ImageDownloader.swift */; };
+		E14816A89F9B592FD3E47F9C9AC444BC /* AlamofireImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF3BB5BE726E5DB5696BAE93867328F /* AlamofireImage-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4235BE468010B5B2B6DE4B1B4054A19 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A8ADDABFD00116F9302F6FA46E91D5 /* TaskDelegate.swift */; };
+		EA3EADF733506597BC4AF9EACAC09780 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C18B1F0A7537ACD226763F992361821 /* ImageCache.swift */; };
+		F447C73D9ACAC59E04218B6770EBF04E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3B6D3EF315C2C478259767C9F33030 /* Request.swift */; };
+		F51AF7ACB11CA7D229257AFDE9B9D532 /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192258BED4753FCC1DBB891A8822C158 /* UIButton+AlamofireImage.swift */; };
+		F8A4F06035481ECC97D7C83D6FF85385 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F4F50CBFA6515D741970DE515C4680 /* Response.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04BB1732098267212D42498F17EB23F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C31791CC30F4487BB91E6A0F9757CE;
+			remoteInfo = Alamofire;
+		};
+		43ED2A6E9D306B857440F448FECA7E6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68692EC57E5DE99751854CEE62C3051C;
+			remoteInfo = SwiftyJSON;
+		};
+		5FDF196A3E20D90439EEC09A53EB1ACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C31791CC30F4487BB91E6A0F9757CE;
+			remoteInfo = Alamofire;
+		};
+		8C856E5307568299FD6E2FF2885EEDD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074F24BFC3AFD1B579C2519B9CCEDF8D;
+			remoteInfo = AlamofireImage;
+		};
+		A5D6F8BDF1A28823E66E3EAC79C491B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68692EC57E5DE99751854CEE62C3051C;
+			remoteInfo = SwiftyJSON;
+		};
+		C7AFE77B500A06088C05A2B350898DAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074F24BFC3AFD1B579C2519B9CCEDF8D;
+			remoteInfo = AlamofireImage;
+		};
+		CFB7648C615DF4AF805CA22825CEBA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C31791CC30F4487BB91E6A0F9757CE;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042BCE060E3F618BD0E4B1A4B009C46B /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
+		075250EDFB16246FE110BE45851201E9 /* Pods-Sky Movies-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sky Movies-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0C54D714ECEE96CCC7B5C34E3F8043F3 /* libSwiftyJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftyJSON.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CDB1BB0491DAF3D886A599EB5FB3E2A /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
+		13FA77365CFE08247C88F3462FEA7004 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-umbrella.h"; path = "../../Headers/Public/Alamofire/Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		192258BED4753FCC1DBB891A8822C158 /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
+		21BE8B0548130D2417BDC43D242B46C7 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		27E312A20EA09631F9DA5B2C24105E06 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		305F701868DF62673D6A48C9D02DEC22 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
+		3199664EFA2A7D61B10CFB43B08F49EB /* Pods-Sky Movies-Sky MoviesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sky Movies-Sky MoviesTests-umbrella.h"; sourceTree = "<group>"; };
+		325D74B4AA43245E0D6BC41CCE79B128 /* Pods-Sky Movies-Sky MoviesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sky Movies-Sky MoviesTests.modulemap"; sourceTree = "<group>"; };
+		3AB6D590D5BA5E688EE2F4652E3A5921 /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
+		3BFB0E3008F8669694FF3C4B603118E2 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		3DE4D22D093AACDB8CBB2185DB9B13B1 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		44A35944D90F4152DB8F4C527A11F600 /* Pods-Sky Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sky Movies.debug.xcconfig"; sourceTree = "<group>"; };
+		4B6DB1CCBC930049BAF9C38CA3666E01 /* libAlamofireImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlamofireImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F4CDC69F76672A50046A540798C24AA /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
+		4F707BA4ACFFA752A2DC731B53CCA6D2 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		4FB9277A4A56AD35DBA950C275AA24D4 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		52E11D4A31C1B0F0BCDA7FB835C6272C /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		58DF55DD3EC025A1DCD3EF298F8BBBCF /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = SwiftyJSON.modulemap; path = ../../Headers/Public/SwiftyJSON/SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		5CA3C52E20BAE47A2ADF226FB400D13F /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
+		639B6CF51A1EE93C0646D9AAC260B480 /* Pods-Sky Movies-Sky MoviesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sky Movies-Sky MoviesTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		63D09DE9CA9EBB6EF6FBAF598E58C1E9 /* Pods-Sky Movies-Sky MoviesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sky Movies-Sky MoviesTests-dummy.m"; sourceTree = "<group>"; };
+		67B4917C858C0BF406AE3DF365CD5BF8 /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
+		6B0A198442E83C6B7B8290442763AF77 /* Pods-Sky Movies-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sky Movies-umbrella.h"; sourceTree = "<group>"; };
+		6B8BF61FA654092DB0749D049E1F8497 /* Pods-Sky Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sky Movies.release.xcconfig"; sourceTree = "<group>"; };
+		6EB2B35D853FE38D795D630C845166AC /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		731E9E29309221E272F16E6E481FA94C /* Pods-Sky Movies-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sky Movies-acknowledgements.plist"; sourceTree = "<group>"; };
+		7985CF6E546CBE7C36E8462F8BF0259A /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
+		7DDEEA8396F7A338D2E0A06257C2E28A /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
+		828ABAD45D3E5889611D7A7817D604FE /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		8C18B1F0A7537ACD226763F992361821 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		970E763097792DC292696672156C6D3C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		9787BB110BA34F91349BF005789A400A /* Pods-Sky Movies-Sky MoviesTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sky Movies-Sky MoviesTests-frameworks.sh"; sourceTree = "<group>"; };
+		97F383A569EE247A6BCD3A97C9F2537C /* libPods-Sky Movies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sky Movies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC2E870B393137302C4445CC3439E1D /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		A20FE03B4E30C841D4848A8EA05BA59F /* Pods-Sky Movies.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sky Movies.modulemap"; sourceTree = "<group>"; };
+		A3F49086748FB1D6AD1AFFBBAFD6407D /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		B0478E74F56F0F4677AAD2B21009C086 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		B756E3628D8F92F311C12D5A8C64DF4A /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		B8678F9B5799D757B31F473D5908C5B9 /* Pods-Sky Movies-Sky MoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sky Movies-Sky MoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA3B6D3EF315C2C478259767C9F33030 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		BDD7A3694E5677182734463F3894528B /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		C0DC5C0D14E65B0C9144F85DE1EA2A8D /* Pods-Sky Movies-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sky Movies-resources.sh"; sourceTree = "<group>"; };
+		CC1D625523A3FAF04E321202E10AC6AA /* Pods-Sky Movies-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sky Movies-frameworks.sh"; sourceTree = "<group>"; };
+		CDCB8A964874706C6CF0E48A49CDB1C3 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		CE03CC42A507EA888B462155D943DAE4 /* Pods-Sky Movies-Sky MoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sky Movies-Sky MoviesTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3DE6F58FDAB702895B9D61605B9E42F /* Pods-Sky Movies-Sky MoviesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sky Movies-Sky MoviesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D4F3548CFF389ACDF45276B88CC722F4 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		D6C38223090B5E259EC935A8B69206C0 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftyJSON-umbrella.h"; path = "../../Headers/Public/SwiftyJSON/SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		D7A8ADDABFD00116F9302F6FA46E91D5 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		D8F4F50CBFA6515D741970DE515C4680 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		E652E1FA733500F5D25A6C55B581612D /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		E74F3275E8FFD812648A3B211D27BCA5 /* Pods-Sky Movies-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sky Movies-dummy.m"; sourceTree = "<group>"; };
+		EBF3BB5BE726E5DB5696BAE93867328F /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AlamofireImage-umbrella.h"; path = "../../Headers/Public/AlamofireImage/AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
+		ED6C101F7CC5896CA7507660B2990A1C /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		F29FF8386F7D90E4120B34EC7F901A1A /* Pods-Sky Movies-Sky MoviesTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sky Movies-Sky MoviesTests-resources.sh"; sourceTree = "<group>"; };
+		F40ACB8CF5530D72CBA5843B42ACFC2A /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = Alamofire.modulemap; path = ../../Headers/Public/Alamofire/Alamofire.modulemap; sourceTree = "<group>"; };
+		F5D849AC4D95B8CDBBE5A2E4C12F0A15 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		F7B80CAD6EEED361D5D2EB281360B516 /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
+		FB7931FCFC48F75007A4DB8F67CA6A75 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = AlamofireImage.modulemap; path = ../../Headers/Public/AlamofireImage/AlamofireImage.modulemap; sourceTree = "<group>"; };
+		FC652056E956EC74F268AA598EB1FE52 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		FC8B264BCFABCC7355ABCCEF807E0CC1 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		FE528B8F1058A2BB286387ED70F4B41B /* libPods-Sky Movies-Sky MoviesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sky Movies-Sky MoviesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E6636CAEDE27A0BB3002243F47C8DA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35EBCC90EF752AF9421376198FAB251E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578E2F378C0445526D4EF2BFA6967908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C24EF6B585E56FC952F4C4D0C8AF80B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5511C3CEBCB218462BFE5717201B032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ABFE8EB82B6507E3F8E8846FD22AD0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFEABAFA9779DDE92F7B9A5163D792 /* Alamofire */,
+				F5BEC04E1CED24D9A4FB9919E8B81CD2 /* AlamofireImage */,
+				FE1F170F1CE887BC16AD3618EE167441 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		129012C1B4C25EF624612106A44F5F67 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15882A79AFCC32A13563BA91539A7BB6 /* Pods-Sky Movies */,
+				929BA17A1B172DB15579262C116F38E4 /* Pods-Sky Movies-Sky MoviesTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		15882A79AFCC32A13563BA91539A7BB6 /* Pods-Sky Movies */ = {
+			isa = PBXGroup;
+			children = (
+				A20FE03B4E30C841D4848A8EA05BA59F /* Pods-Sky Movies.modulemap */,
+				075250EDFB16246FE110BE45851201E9 /* Pods-Sky Movies-acknowledgements.markdown */,
+				731E9E29309221E272F16E6E481FA94C /* Pods-Sky Movies-acknowledgements.plist */,
+				E74F3275E8FFD812648A3B211D27BCA5 /* Pods-Sky Movies-dummy.m */,
+				CC1D625523A3FAF04E321202E10AC6AA /* Pods-Sky Movies-frameworks.sh */,
+				C0DC5C0D14E65B0C9144F85DE1EA2A8D /* Pods-Sky Movies-resources.sh */,
+				6B0A198442E83C6B7B8290442763AF77 /* Pods-Sky Movies-umbrella.h */,
+				44A35944D90F4152DB8F4C527A11F600 /* Pods-Sky Movies.debug.xcconfig */,
+				6B8BF61FA654092DB0749D049E1F8497 /* Pods-Sky Movies.release.xcconfig */,
+			);
+			name = "Pods-Sky Movies";
+			path = "Target Support Files/Pods-Sky Movies";
+			sourceTree = "<group>";
+		};
+		1D74069896CDA4D241B331488238E6D8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58DF55DD3EC025A1DCD3EF298F8BBBCF /* SwiftyJSON.modulemap */,
+				828ABAD45D3E5889611D7A7817D604FE /* SwiftyJSON.xcconfig */,
+				3BFB0E3008F8669694FF3C4B603118E2 /* SwiftyJSON-dummy.m */,
+				CDCB8A964874706C6CF0E48A49CDB1C3 /* SwiftyJSON-prefix.pch */,
+				D6C38223090B5E259EC935A8B69206C0 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				0ABFE8EB82B6507E3F8E8846FD22AD0C /* Pods */,
+				A19F73BF4572F002ADC68D2E863B8074 /* Products */,
+				129012C1B4C25EF624612106A44F5F67 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		929BA17A1B172DB15579262C116F38E4 /* Pods-Sky Movies-Sky MoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				325D74B4AA43245E0D6BC41CCE79B128 /* Pods-Sky Movies-Sky MoviesTests.modulemap */,
+				D3DE6F58FDAB702895B9D61605B9E42F /* Pods-Sky Movies-Sky MoviesTests-acknowledgements.markdown */,
+				639B6CF51A1EE93C0646D9AAC260B480 /* Pods-Sky Movies-Sky MoviesTests-acknowledgements.plist */,
+				63D09DE9CA9EBB6EF6FBAF598E58C1E9 /* Pods-Sky Movies-Sky MoviesTests-dummy.m */,
+				9787BB110BA34F91349BF005789A400A /* Pods-Sky Movies-Sky MoviesTests-frameworks.sh */,
+				F29FF8386F7D90E4120B34EC7F901A1A /* Pods-Sky Movies-Sky MoviesTests-resources.sh */,
+				3199664EFA2A7D61B10CFB43B08F49EB /* Pods-Sky Movies-Sky MoviesTests-umbrella.h */,
+				B8678F9B5799D757B31F473D5908C5B9 /* Pods-Sky Movies-Sky MoviesTests.debug.xcconfig */,
+				CE03CC42A507EA888B462155D943DAE4 /* Pods-Sky Movies-Sky MoviesTests.release.xcconfig */,
+			);
+			name = "Pods-Sky Movies-Sky MoviesTests";
+			path = "Target Support Files/Pods-Sky Movies-Sky MoviesTests";
+			sourceTree = "<group>";
+		};
+		9D49E6121477FC5BA50EC74634DEA456 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB7931FCFC48F75007A4DB8F67CA6A75 /* AlamofireImage.modulemap */,
+				7DDEEA8396F7A338D2E0A06257C2E28A /* AlamofireImage.xcconfig */,
+				042BCE060E3F618BD0E4B1A4B009C46B /* AlamofireImage-dummy.m */,
+				7985CF6E546CBE7C36E8462F8BF0259A /* AlamofireImage-prefix.pch */,
+				EBF3BB5BE726E5DB5696BAE93867328F /* AlamofireImage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlamofireImage";
+			sourceTree = "<group>";
+		};
+		A19F73BF4572F002ADC68D2E863B8074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52E11D4A31C1B0F0BCDA7FB835C6272C /* libAlamofire.a */,
+				4B6DB1CCBC930049BAF9C38CA3666E01 /* libAlamofireImage.a */,
+				97F383A569EE247A6BCD3A97C9F2537C /* libPods-Sky Movies.a */,
+				FE528B8F1058A2BB286387ED70F4B41B /* libPods-Sky Movies-Sky MoviesTests.a */,
+				0C54D714ECEE96CCC7B5C34E3F8043F3 /* libSwiftyJSON.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C84F4385F46CCCDC12DDB646698317CD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F40ACB8CF5530D72CBA5843B42ACFC2A /* Alamofire.modulemap */,
+				FC652056E956EC74F268AA598EB1FE52 /* Alamofire.xcconfig */,
+				ED6C101F7CC5896CA7507660B2990A1C /* Alamofire-dummy.m */,
+				E652E1FA733500F5D25A6C55B581612D /* Alamofire-prefix.pch */,
+				13FA77365CFE08247C88F3462FEA7004 /* Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		F5BEC04E1CED24D9A4FB9919E8B81CD2 /* AlamofireImage */ = {
+			isa = PBXGroup;
+			children = (
+				67B4917C858C0BF406AE3DF365CD5BF8 /* AFIError.swift */,
+				305F701868DF62673D6A48C9D02DEC22 /* Image.swift */,
+				8C18B1F0A7537ACD226763F992361821 /* ImageCache.swift */,
+				4F4CDC69F76672A50046A540798C24AA /* ImageDownloader.swift */,
+				F7B80CAD6EEED361D5D2EB281360B516 /* ImageFilter.swift */,
+				3AB6D590D5BA5E688EE2F4652E3A5921 /* Request+AlamofireImage.swift */,
+				192258BED4753FCC1DBB891A8822C158 /* UIButton+AlamofireImage.swift */,
+				5CA3C52E20BAE47A2ADF226FB400D13F /* UIImage+AlamofireImage.swift */,
+				0CDB1BB0491DAF3D886A599EB5FB3E2A /* UIImageView+AlamofireImage.swift */,
+				9D49E6121477FC5BA50EC74634DEA456 /* Support Files */,
+			);
+			path = AlamofireImage;
+			sourceTree = "<group>";
+		};
+		FE1F170F1CE887BC16AD3618EE167441 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				F5D849AC4D95B8CDBBE5A2E4C12F0A15 /* SwiftyJSON.swift */,
+				1D74069896CDA4D241B331488238E6D8 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		FFBFEABAFA9779DDE92F7B9A5163D792 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				B756E3628D8F92F311C12D5A8C64DF4A /* AFError.swift */,
+				B0478E74F56F0F4677AAD2B21009C086 /* Alamofire.swift */,
+				4F707BA4ACFFA752A2DC731B53CCA6D2 /* DispatchQueue+Alamofire.swift */,
+				21BE8B0548130D2417BDC43D242B46C7 /* MultipartFormData.swift */,
+				D4F3548CFF389ACDF45276B88CC722F4 /* NetworkReachabilityManager.swift */,
+				BDD7A3694E5677182734463F3894528B /* Notifications.swift */,
+				6EB2B35D853FE38D795D630C845166AC /* ParameterEncoding.swift */,
+				BA3B6D3EF315C2C478259767C9F33030 /* Request.swift */,
+				D8F4F50CBFA6515D741970DE515C4680 /* Response.swift */,
+				970E763097792DC292696672156C6D3C /* ResponseSerialization.swift */,
+				4FB9277A4A56AD35DBA950C275AA24D4 /* Result.swift */,
+				27E312A20EA09631F9DA5B2C24105E06 /* ServerTrustPolicy.swift */,
+				3DE4D22D093AACDB8CBB2185DB9B13B1 /* SessionDelegate.swift */,
+				FC8B264BCFABCC7355ABCCEF807E0CC1 /* SessionManager.swift */,
+				D7A8ADDABFD00116F9302F6FA46E91D5 /* TaskDelegate.swift */,
+				A3F49086748FB1D6AD1AFFBBAFD6407D /* Timeline.swift */,
+				9CC2E870B393137302C4445CC3439E1D /* Validation.swift */,
+				C84F4385F46CCCDC12DDB646698317CD /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01A75E11576BDE83997F8BA3C9A60E76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14816A89F9B592FD3E47F9C9AC444BC /* AlamofireImage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14F4F92E8D2F1A619D62F64769EAD6FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9519BA236F22FA7972DACB21A04EEB61 /* Pods-Sky Movies-Sky MoviesTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23BC1BD6CEADE7B6E1296D3E277B8D81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED2910EA89E273393659FFD5EF3EB93 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463639E561BB345C36A42601724D241C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CF43A5E50F725F17761FF094D0BD1F /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD38FD094D3238BC5C0448982A2626E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8B5384772F7C61A06DE9A2EC5224C22 /* Pods-Sky Movies-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04D60CDCBEDF99F0D3BF488AE540AD29 /* Pods-Sky Movies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 810413AFDAB33B355547ACD958BDCE4D /* Build configuration list for PBXNativeTarget "Pods-Sky Movies" */;
+			buildPhases = (
+				872418A7A91BBFFFEF9C2B56A9CEE6A4 /* Sources */,
+				0E6636CAEDE27A0BB3002243F47C8DA6 /* Frameworks */,
+				DD38FD094D3238BC5C0448982A2626E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B039324105DF2DD91C03FDD98F0A819B /* PBXTargetDependency */,
+				590916F03C96CF033C1871DE9CDB5BE8 /* PBXTargetDependency */,
+				3DA5717B152980E35940452BC0B91139 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sky Movies";
+			productName = "Pods-Sky Movies";
+			productReference = 97F383A569EE247A6BCD3A97C9F2537C /* libPods-Sky Movies.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		074F24BFC3AFD1B579C2519B9CCEDF8D /* AlamofireImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06BBC859BE4E99CCCA499522330BF6F /* Build configuration list for PBXNativeTarget "AlamofireImage" */;
+			buildPhases = (
+				2A1BEF61F77007E49673B5EB888F09F6 /* Sources */,
+				5C24EF6B585E56FC952F4C4D0C8AF80B /* Frameworks */,
+				01A75E11576BDE83997F8BA3C9A60E76 /* Headers */,
+				338207C3AD42D9F7CD62C05850F2171D /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE2AAA7F36746F44CD0E29DC33F0367 /* PBXTargetDependency */,
+			);
+			name = AlamofireImage;
+			productName = AlamofireImage;
+			productReference = 4B6DB1CCBC930049BAF9C38CA3666E01 /* libAlamofireImage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		68692EC57E5DE99751854CEE62C3051C /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61A0436D17EF58227495293242DF2356 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				653262F9775330EEBF60C11E91963025 /* Sources */,
+				C5511C3CEBCB218462BFE5717201B032 /* Frameworks */,
+				23BC1BD6CEADE7B6E1296D3E277B8D81 /* Headers */,
+				4F2BCC77DF50CA632C8E1CC52F18D260 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 0C54D714ECEE96CCC7B5C34E3F8043F3 /* libSwiftyJSON.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8F118CA47841E47CCAFCFB98E1464837 /* Pods-Sky Movies-Sky MoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B311AAF82B37D79352BD098FB7B28E4 /* Build configuration list for PBXNativeTarget "Pods-Sky Movies-Sky MoviesTests" */;
+			buildPhases = (
+				E10E00A28BF3CB3C8BB70A7457FEA341 /* Sources */,
+				35EBCC90EF752AF9421376198FAB251E /* Frameworks */,
+				14F4F92E8D2F1A619D62F64769EAD6FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FAA85E4738CAC5DD3A71AA5D631AC6B /* PBXTargetDependency */,
+				C7A680E6FD575E2DB2EA74AC7B7806C1 /* PBXTargetDependency */,
+				FC28D46EC360C83C846686FD182A7A6D /* PBXTargetDependency */,
+			);
+			name = "Pods-Sky Movies-Sky MoviesTests";
+			productName = "Pods-Sky Movies-Sky MoviesTests";
+			productReference = FE528B8F1058A2BB286387ED70F4B41B /* libPods-Sky Movies-Sky MoviesTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		95C31791CC30F4487BB91E6A0F9757CE /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775DFD92C55B9A8C0336550FB7770AD2 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				EAF8CBAF390BD440442C442B91C73A73 /* Sources */,
+				578E2F378C0445526D4EF2BFA6967908 /* Frameworks */,
+				463639E561BB345C36A42601724D241C /* Headers */,
+				5D257AE991614B2667ECDFDA62B94519 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 52E11D4A31C1B0F0BCDA7FB835C6272C /* libAlamofire.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0940;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A19F73BF4572F002ADC68D2E863B8074 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95C31791CC30F4487BB91E6A0F9757CE /* Alamofire */,
+				074F24BFC3AFD1B579C2519B9CCEDF8D /* AlamofireImage */,
+				04D60CDCBEDF99F0D3BF488AE540AD29 /* Pods-Sky Movies */,
+				8F118CA47841E47CCAFCFB98E1464837 /* Pods-Sky Movies-Sky MoviesTests */,
+				68692EC57E5DE99751854CEE62C3051C /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		338207C3AD42D9F7CD62C05850F2171D /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/AlamofireImage/AlamofireImage.modulemap",
+				"${PODS_ROOT}/Headers/Public/AlamofireImage/AlamofireImage-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/AlamofireImage/AlamofireImage.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/AlamofireImage/AlamofireImage-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		4F2BCC77DF50CA632C8E1CC52F18D260 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON.modulemap",
+				"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		5D257AE991614B2667ECDFDA62B94519 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire.modulemap",
+				"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A1BEF61F77007E49673B5EB888F09F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34350F31C1FDEEDD5430DB938A2495BE /* AFIError.swift in Sources */,
+				3B005DF0362CD13FBDCD143C8887C5EF /* AlamofireImage-dummy.m in Sources */,
+				2A48A0AEBD6CE04F50294F65CF229D16 /* Image.swift in Sources */,
+				EA3EADF733506597BC4AF9EACAC09780 /* ImageCache.swift in Sources */,
+				C1410248BF2B6C7ED479BFBC82BA905C /* ImageDownloader.swift in Sources */,
+				84154EEB4FB4748F509B8F6A47C90A3D /* ImageFilter.swift in Sources */,
+				1C76BA23D195C60B9676FAB77947CF8C /* Request+AlamofireImage.swift in Sources */,
+				F51AF7ACB11CA7D229257AFDE9B9D532 /* UIButton+AlamofireImage.swift in Sources */,
+				715EA238760F6BB6DF740A83264F6C21 /* UIImage+AlamofireImage.swift in Sources */,
+				87C91CE6F8535738E8740848E651678E /* UIImageView+AlamofireImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653262F9775330EEBF60C11E91963025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE589BDF033E4AD63C253F5248228021 /* SwiftyJSON-dummy.m in Sources */,
+				1D95EF9DC96E5E365208B6192F0BA009 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		872418A7A91BBFFFEF9C2B56A9CEE6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C81E7C4ECCAD860D6506996907CEE8 /* Pods-Sky Movies-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10E00A28BF3CB3C8BB70A7457FEA341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D5D435C32B025FECAC1B4BEA1173DDF /* Pods-Sky Movies-Sky MoviesTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF8CBAF390BD440442C442B91C73A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3D3794AEC0F0DE985CB848BF68EC01 /* AFError.swift in Sources */,
+				540780C279ED3C9BB892AF2C378496EA /* Alamofire-dummy.m in Sources */,
+				83813BDF00D751059AB1A1045FB7A240 /* Alamofire.swift in Sources */,
+				60B899F8FAC6F674B0EE6F5A69E2B2A3 /* DispatchQueue+Alamofire.swift in Sources */,
+				054020A0B396F220718220B72497D72B /* MultipartFormData.swift in Sources */,
+				B929CA9E74943C99F4697DE31DD2233D /* NetworkReachabilityManager.swift in Sources */,
+				7FFC212EDF93CAF60E7F16A1373B3655 /* Notifications.swift in Sources */,
+				7B02E84B6522A96BC9747947007EE132 /* ParameterEncoding.swift in Sources */,
+				F447C73D9ACAC59E04218B6770EBF04E /* Request.swift in Sources */,
+				F8A4F06035481ECC97D7C83D6FF85385 /* Response.swift in Sources */,
+				24D84E7CCF5B9E6D0D8BE6897FFF4609 /* ResponseSerialization.swift in Sources */,
+				8E698D719D43B4A8713417AF20EFBBE4 /* Result.swift in Sources */,
+				83863CD37B6BFB6F42887C452A4DA288 /* ServerTrustPolicy.swift in Sources */,
+				95638606564452201D545FA4119C270A /* SessionDelegate.swift in Sources */,
+				A6C26370A334B5FD8F89949AF13412CB /* SessionManager.swift in Sources */,
+				E4235BE468010B5B2B6DE4B1B4054A19 /* TaskDelegate.swift in Sources */,
+				3573F6983068A5EDA92B31E566438B22 /* Timeline.swift in Sources */,
+				4FB3A851B716BAA32464F3072C56D10B /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DA5717B152980E35940452BC0B91139 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 68692EC57E5DE99751854CEE62C3051C /* SwiftyJSON */;
+			targetProxy = A5D6F8BDF1A28823E66E3EAC79C491B6 /* PBXContainerItemProxy */;
+		};
+		590916F03C96CF033C1871DE9CDB5BE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlamofireImage;
+			target = 074F24BFC3AFD1B579C2519B9CCEDF8D /* AlamofireImage */;
+			targetProxy = 8C856E5307568299FD6E2FF2885EEDD3 /* PBXContainerItemProxy */;
+		};
+		9FAA85E4738CAC5DD3A71AA5D631AC6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 95C31791CC30F4487BB91E6A0F9757CE /* Alamofire */;
+			targetProxy = 5FDF196A3E20D90439EEC09A53EB1ACC /* PBXContainerItemProxy */;
+		};
+		B039324105DF2DD91C03FDD98F0A819B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 95C31791CC30F4487BB91E6A0F9757CE /* Alamofire */;
+			targetProxy = CFB7648C615DF4AF805CA22825CEBA6A /* PBXContainerItemProxy */;
+		};
+		C7A680E6FD575E2DB2EA74AC7B7806C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlamofireImage;
+			target = 074F24BFC3AFD1B579C2519B9CCEDF8D /* AlamofireImage */;
+			targetProxy = C7AFE77B500A06088C05A2B350898DAF /* PBXContainerItemProxy */;
+		};
+		FAE2AAA7F36746F44CD0E29DC33F0367 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 95C31791CC30F4487BB91E6A0F9757CE /* Alamofire */;
+			targetProxy = 04BB1732098267212D42498F17EB23F1 /* PBXContainerItemProxy */;
+		};
+		FC28D46EC360C83C846686FD182A7A6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 68692EC57E5DE99751854CEE62C3051C /* SwiftyJSON */;
+			targetProxy = 43ED2A6E9D306B857440F448FECA7E6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		562103AF4BF221674F812038ABD32B7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 828ABAD45D3E5889611D7A7817D604FE /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SwiftyJSON/SwiftyJSON.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E9A7E91C73C0F1155F1DDB3FCE90DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC652056E956EC74F268AA598EB1FE52 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B524D0991D7C61268FCA069B01039AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 828ABAD45D3E5889611D7A7817D604FE /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SwiftyJSON/SwiftyJSON.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9894BA18AF0C87261EE40D2028CD420F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE03CC42A507EA888B462155D943DAE4 /* Pods-Sky Movies-Sky MoviesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sky Movies-Sky MoviesTests/Pods-Sky Movies-Sky MoviesTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A715E179475AEE393492F008A377A1D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DDEEA8396F7A338D2E0A06257C2E28A /* AlamofireImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AlamofireImage/AlamofireImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/AlamofireImage/AlamofireImage.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AlamofireImage;
+				PRODUCT_NAME = AlamofireImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4A1EFE265263642A0AF9A1116BE97AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B8BF61FA654092DB0749D049E1F8497 /* Pods-Sky Movies.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sky Movies/Pods-Sky Movies.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB59358B35CBBCBEFA450BBFE7F46DF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8678F9B5799D757B31F473D5908C5B9 /* Pods-Sky Movies-Sky MoviesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sky Movies-Sky MoviesTests/Pods-Sky Movies-Sky MoviesTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C89ECC4CB6E4874FC5DCD4B394E13DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DDEEA8396F7A338D2E0A06257C2E28A /* AlamofireImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AlamofireImage/AlamofireImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/AlamofireImage/AlamofireImage.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AlamofireImage;
+				PRODUCT_NAME = AlamofireImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB3CB156A5998D1BEBE99BB542408AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC652056E956EC74F268AA598EB1FE52 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA3B5727C2210DB12B8821282978FB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44A35944D90F4152DB8F4C527A11F600 /* Pods-Sky Movies.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sky Movies/Pods-Sky Movies.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B311AAF82B37D79352BD098FB7B28E4 /* Build configuration list for PBXNativeTarget "Pods-Sky Movies-Sky MoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB59358B35CBBCBEFA450BBFE7F46DF4 /* Debug */,
+				9894BA18AF0C87261EE40D2028CD420F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61A0436D17EF58227495293242DF2356 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B524D0991D7C61268FCA069B01039AF /* Debug */,
+				562103AF4BF221674F812038ABD32B7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775DFD92C55B9A8C0336550FB7770AD2 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E9A7E91C73C0F1155F1DDB3FCE90DB7 /* Debug */,
+				DB3CB156A5998D1BEBE99BB542408AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		810413AFDAB33B355547ACD958BDCE4D /* Build configuration list for PBXNativeTarget "Pods-Sky Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3B5727C2210DB12B8821282978FB63 /* Debug */,
+				B4A1EFE265263642A0AF9A1116BE97AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06BBC859BE4E99CCCA499522330BF6F /* Build configuration list for PBXNativeTarget "AlamofireImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A715E179475AEE393492F008A377A1D4 /* Debug */,
+				C89ECC4CB6E4874FC5DCD4B394E13DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
