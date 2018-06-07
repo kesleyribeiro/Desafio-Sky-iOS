@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--SKY Movies-->
+        <!--Cine SKY-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MoviesVC" customModule="Sky_Movies" customModuleProvider="target" sceneMemberID="viewController">
@@ -109,7 +109,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SKY Movies" id="3eC-LK-oCP"/>
+                    <navigationItem key="navigationItem" title="Cine SKY" id="3eC-LK-oCP"/>
                     <connections>
                         <outlet property="moviesCollectionView" destination="m22-Uo-JAF" id="s37-YA-CXd"/>
                     </connections>
