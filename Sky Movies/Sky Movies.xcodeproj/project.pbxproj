@@ -18,6 +18,8 @@
 		FA889BE620C828AF00A67F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA889BE520C828AF00A67F47 /* Assets.xcassets */; };
 		FA889BE920C828AF00A67F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA889BE720C828AF00A67F47 /* LaunchScreen.storyboard */; };
 		FA889BF420C828B000A67F47 /* Sky_MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA889BF320C828B000A67F47 /* Sky_MoviesTests.swift */; };
+		FAFFDE6E20C8796600BD023D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFDE6D20C8796600BD023D /* Movie.swift */; };
+		FAFFDE7120C87C8B00BD023D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFDE7020C87C8B00BD023D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		FA889BEF20C828B000A67F47 /* Sky MoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sky MoviesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA889BF320C828B000A67F47 /* Sky_MoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sky_MoviesTests.swift; sourceTree = "<group>"; };
 		FA889BF520C828B000A67F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFFDE6D20C8796600BD023D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		FAFFDE7020C87C8B00BD023D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 		FA889BDA20C828AD00A67F47 /* Sky Movies */ = {
 			isa = PBXGroup;
 			children = (
+				FAFFDE6F20C87C7D00BD023D /* Utils */,
+				FAFFDE6C20C8793900BD023D /* model */,
 				FA57896720C84D4D00CA3D12 /* view */,
 				FA57896620C84D3800CA3D12 /* controller */,
 				FA889BDB20C828AD00A67F47 /* AppDelegate.swift */,
@@ -151,6 +157,22 @@
 				FA889BF520C828B000A67F47 /* Info.plist */,
 			);
 			path = "Sky MoviesTests";
+			sourceTree = "<group>";
+		};
+		FAFFDE6C20C8793900BD023D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAFFDE6D20C8796600BD023D /* Movie.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FAFFDE6F20C87C7D00BD023D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAFFDE7020C87C8B00BD023D /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +319,9 @@
 			files = (
 				FA889BDE20C828AD00A67F47 /* MoviesVC.swift in Sources */,
 				FA57896920C84D6F00CA3D12 /* MovieCVCell.swift in Sources */,
+				FAFFDE6E20C8796600BD023D /* Movie.swift in Sources */,
 				FA889BDC20C828AD00A67F47 /* AppDelegate.swift in Sources */,
+				FAFFDE7120C87C8B00BD023D /* Constants.swift in Sources */,
 				FA889BE420C828AD00A67F47 /* Sky_Movies.xcdatamodeld in Sources */,
 				FA57896B20C8595900CA3D12 /* MovieHeaderView.swift in Sources */,
 			);

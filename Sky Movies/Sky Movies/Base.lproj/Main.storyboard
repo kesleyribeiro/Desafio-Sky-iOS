@@ -36,28 +36,36 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example" translatesAutoresizingMaskIntoConstraints="NO" id="tUq-Li-syK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="200"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="190"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="200" id="koF-Jr-mZH"/>
+                                                        <constraint firstAttribute="height" constant="190" id="koF-Jr-mZH"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Movie" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVZ-qe-xMz">
-                                                    <rect key="frame" x="0.0" y="208" width="130" height="19.5"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Movie" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="KVZ-qe-xMz">
+                                                    <rect key="frame" x="0.0" y="195" width="130" height="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1Y7-o0-jZX">
+                                                    <rect key="frame" x="47" y="76.5" width="37" height="37"/>
+                                                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="KVZ-qe-xMz" secondAttribute="trailing" id="ELB-h3-dbS"/>
                                             <constraint firstAttribute="trailing" secondItem="tUq-Li-syK" secondAttribute="trailing" id="O7u-dT-N1J"/>
                                             <constraint firstItem="tUq-Li-syK" firstAttribute="top" secondItem="nlc-LC-VZd" secondAttribute="top" id="OhO-i2-dfU"/>
-                                            <constraint firstAttribute="bottom" secondItem="KVZ-qe-xMz" secondAttribute="bottom" constant="2" id="lrh-1s-KKr"/>
-                                            <constraint firstItem="KVZ-qe-xMz" firstAttribute="leading" secondItem="nlc-LC-VZd" secondAttribute="leading" id="qR8-hN-6kn"/>
+                                            <constraint firstItem="KVZ-qe-xMz" firstAttribute="top" secondItem="tUq-Li-syK" secondAttribute="bottom" constant="5" id="SP2-R2-Zjt"/>
+                                            <constraint firstItem="1Y7-o0-jZX" firstAttribute="centerY" secondItem="tUq-Li-syK" secondAttribute="centerY" id="aoR-DH-TaX"/>
+                                            <constraint firstItem="1Y7-o0-jZX" firstAttribute="centerX" secondItem="tUq-Li-syK" secondAttribute="centerX" id="dmG-Xo-dPf"/>
+                                            <constraint firstItem="KVZ-qe-xMz" firstAttribute="leading" secondItem="nlc-LC-VZd" secondAttribute="leading" id="equ-T5-wMD"/>
+                                            <constraint firstAttribute="trailing" secondItem="KVZ-qe-xMz" secondAttribute="trailing" id="tIr-Q9-cyA"/>
                                             <constraint firstItem="tUq-Li-syK" firstAttribute="leading" secondItem="nlc-LC-VZd" secondAttribute="leading" id="uSe-sQ-MBq"/>
                                         </constraints>
+                                        <size key="customSize" width="130" height="230"/>
                                         <connections>
+                                            <outlet property="actyIndicator" destination="1Y7-o0-jZX" id="kTG-D6-XQi"/>
                                             <outlet property="movieImageView" destination="tUq-Li-syK" id="7yX-kJ-JwV"/>
                                             <outlet property="titleMovieLabel" destination="KVZ-qe-xMz" id="1Bo-Sd-f0B"/>
                                         </connections>

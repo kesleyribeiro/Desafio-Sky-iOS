@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class MoviesVC: UIViewController {
 
@@ -18,6 +20,10 @@ class MoviesVC: UIViewController {
     
     // MARK: - Properties
     
+    var movie: Movie!
+    var movies = [Movie]()
+    var numberOfMovies = Int()
+
     lazy var refreshMovies: UIRefreshControl = {
         
         let refreshControl = UIRefreshControl()
@@ -29,26 +35,47 @@ class MoviesVC: UIViewController {
         
         return refreshControl
     }()
-    
+            
     
     // MARK: - Lifecycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         self.moviesCollectionView.addSubview(self.refreshMovies)
+        
+        getMovies()
     }
     
+
+    func getMovies() {
+        
+        Alamofire.request(URL_API_SKY, method: .get).responseJSON
+            { response in
+                
+                let result = response.result
+                
+                if let dict = result.value as? [Dictionary<String, AnyObject>] {
+                
+                    // Update the number of movies
+                    self.numberOfMovies = dict.count
+                    
+                    for obj in dict {
+                        let movie = Movie(movieDict: obj)
+                        self.movies.append(movie)
+                    }
+                    self.moviesCollectionView.reloadData()
+            }
+        }
+    }
+
     
     // MARK: - Funtions
     
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         
-        print("\nUpdated..")
         // Do some reloading of data and update the collection view's data source
-        // Fetch more objects from a web service
-        
-        // Simply adding an object to the data source
+        getMovies()
         
         self.moviesCollectionView.reloadData()
         refreshControl.endRefreshing()
@@ -65,14 +92,21 @@ extension MoviesVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return numberOfMovies
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCell", for: indexPath) as! MovieCVCell
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCell", for: indexPath) as? MovieCVCell {
             
-        return cell
+            let movie = movies[indexPath.row]
+            
+            cell.configureCell(movie: movie)
+            return cell
+            
+        } else {
+            return MovieCVCell()
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -93,7 +127,7 @@ extension MoviesVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        print("\nHere")
+        print("\nSelected movie: \(indexPath.row)")
     }
 }
 
