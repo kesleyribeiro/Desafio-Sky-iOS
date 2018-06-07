@@ -47,7 +47,9 @@ class MoviesVC: UIViewController {
         getMovies()
     }
     
-
+    
+    // MARK: - Funtions
+    
     func getMovies() {
         
         Alamofire.request(URL_API_SKY, method: .get).responseJSON
@@ -68,15 +70,13 @@ class MoviesVC: UIViewController {
             }
         }
     }
-
-    
-    // MARK: - Funtions
     
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         
-        // Do some reloading of data and update the collection view's data source
+        // Call the function again
         getMovies()
         
+        // Refresh collection view
         self.moviesCollectionView.reloadData()
         refreshControl.endRefreshing()
     }
