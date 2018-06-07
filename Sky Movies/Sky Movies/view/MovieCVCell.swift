@@ -53,6 +53,7 @@ class MovieCVCell: UICollectionViewCell {
                     imageInCache.add(image, withIdentifier: "imageInCache")
                 } else {
                     self.movieImageView.image = UIImage(named: "placeholder")
+                    self.movieImageView.contentMode = .scaleAspectFill
                 }
                 self.actyIndicator.stopAnimating()
             }

@@ -127,7 +127,7 @@ extension MoviesVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        print("\nSelected movie: \(indexPath.row)")
+        print("\nSelected movie: \(indexPath.row + 1)")
     }
 }
 
