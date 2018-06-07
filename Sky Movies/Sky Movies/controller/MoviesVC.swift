@@ -31,7 +31,7 @@ class MoviesVC: UIViewController {
         refreshControl.addTarget(self, action: #selector(MoviesVC.handleRefresh(_:)), for: UIControlEvents.valueChanged)
 
         refreshControl.tintColor = UIColor.lightGray
-        refreshControl.attributedTitle = NSAttributedString(string: "Fetching Movies Data...")
+        refreshControl.attributedTitle = NSAttributedString(string: "Loading movies data...")
         
         return refreshControl
     }()

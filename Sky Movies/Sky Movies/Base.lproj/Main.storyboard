@@ -21,34 +21,34 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="m22-Uo-JAF">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.066666666669999999" green="0.090196078430000007" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="CyJ-HN-kPS">
-                                    <size key="itemSize" width="130" height="230"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="0.0" id="CyJ-HN-kPS">
+                                    <size key="itemSize" width="140" height="250"/>
                                     <size key="headerReferenceSize" width="50" height="30"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
+                                    <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="30"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="movieCell" id="nlc-LC-VZd" customClass="MovieCVCell" customModule="Sky_Movies" customModuleProvider="target">
-                                        <rect key="frame" x="15" y="45" width="130" height="230"/>
+                                        <rect key="frame" x="15" y="40" width="140" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="130" height="230"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="tUq-Li-syK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="190"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example" translatesAutoresizingMaskIntoConstraints="NO" id="tUq-Li-syK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="190"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="190" id="koF-Jr-mZH"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Movie" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="KVZ-qe-xMz">
-                                                    <rect key="frame" x="0.0" y="195" width="130" height="35"/>
+                                                    <rect key="frame" x="0.0" y="195" width="140" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1Y7-o0-jZX">
-                                                    <rect key="frame" x="47" y="76.5" width="37" height="37"/>
+                                                    <rect key="frame" x="52" y="76.5" width="37" height="37"/>
                                                     <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </activityIndicatorView>
                                             </subviews>
@@ -60,11 +60,9 @@
                                             <constraint firstItem="1Y7-o0-jZX" firstAttribute="centerY" secondItem="tUq-Li-syK" secondAttribute="centerY" id="aoR-DH-TaX"/>
                                             <constraint firstItem="1Y7-o0-jZX" firstAttribute="centerX" secondItem="tUq-Li-syK" secondAttribute="centerX" id="dmG-Xo-dPf"/>
                                             <constraint firstItem="KVZ-qe-xMz" firstAttribute="leading" secondItem="nlc-LC-VZd" secondAttribute="leading" id="equ-T5-wMD"/>
-                                            <constraint firstAttribute="bottom" secondItem="KVZ-qe-xMz" secondAttribute="bottom" id="iUV-iD-lpC"/>
                                             <constraint firstAttribute="trailing" secondItem="KVZ-qe-xMz" secondAttribute="trailing" id="tIr-Q9-cyA"/>
                                             <constraint firstItem="tUq-Li-syK" firstAttribute="leading" secondItem="nlc-LC-VZd" secondAttribute="leading" id="uSe-sQ-MBq"/>
                                         </constraints>
-                                        <size key="customSize" width="130" height="230"/>
                                         <connections>
                                             <outlet property="actyIndicator" destination="1Y7-o0-jZX" id="kTG-D6-XQi"/>
                                             <outlet property="movieImageView" destination="tUq-Li-syK" id="7yX-kJ-JwV"/>
@@ -109,14 +107,33 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Cine SKY" id="3eC-LK-oCP"/>
+                    <navigationItem key="navigationItem" title="Cine SKY" id="3eC-LK-oCP">
+                        <barButtonItem key="backBarButtonItem" title=" " id="eu7-Mv-evU"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="moviesCollectionView" destination="m22-Uo-JAF" id="s37-YA-CXd"/>
+                        <segue destination="pdN-1B-0wQ" kind="show" identifier="showDetails" id="in9-al-yLZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1134.375" y="133.09859154929578"/>
+        </scene>
+        <!--Title Movie-->
+        <scene sceneID="tOe-Hd-WQg">
+            <objects>
+                <viewController id="pdN-1B-0wQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sd0-rY-chx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.090196078430000007" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="yz9-Cf-VyU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title Movie" id="To2-vk-Y9j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mn0-mz-qW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wwX-sI-Ky0">
@@ -126,9 +143,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="vKn-18-R5a">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="barTintColor" red="0.066666666666666666" green="0.090196078431372548" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -142,6 +163,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="placeholder" width="300" height="300"/>
+        <image name="example" width="1280" height="1920"/>
     </resources>
 </document>
