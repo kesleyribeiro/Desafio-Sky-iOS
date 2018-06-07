@@ -20,9 +20,14 @@ class MoviesVC: UIViewController {
     
     // MARK: - Properties
     
-    var movie: Movie!
     var movies = [Movie]()
     var numberOfMovies = Int()
+    var selectedMovie: Movie?
+    var detailsVC: DetailsVC?
+    
+    struct Storyboard {
+        static let showDetails = "showDetails"
+    }
 
     lazy var refreshMovies: UIRefreshControl = {
         
@@ -118,6 +123,17 @@ extension MoviesVC: UICollectionViewDataSource {
         return headerView
     }
     
+
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if segue.identifier == Storyboard.showDetails {
+            let details = segue.destination as! DetailsVC
+            details.selectedMovie = selectedMovie
+        }
+    }
+
 }
 
 
@@ -127,7 +143,11 @@ extension MoviesVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        print("\nSelected movie: \(indexPath.row + 1)")
+        selectedMovie = movies[indexPath.row]        
+        self.detailsVC?.selectedMovie = selectedMovie
+        
+        // Call the DetailsVC - Detail UI
+        performSegue(withIdentifier: Storyboard.showDetails, sender: selectedMovie)
     }
 }
 

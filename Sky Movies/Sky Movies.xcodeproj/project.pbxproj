@@ -20,6 +20,7 @@
 		FA889BF420C828B000A67F47 /* Sky_MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA889BF320C828B000A67F47 /* Sky_MoviesTests.swift */; };
 		FAFFDE6E20C8796600BD023D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFDE6D20C8796600BD023D /* Movie.swift */; };
 		FAFFDE7120C87C8B00BD023D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFDE7020C87C8B00BD023D /* Constants.swift */; };
+		FAFFDE7320C9D04C00BD023D /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFDE7220C9D04C00BD023D /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		FA889BF520C828B000A67F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAFFDE6D20C8796600BD023D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		FAFFDE7020C87C8B00BD023D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAFFDE7220C9D04C00BD023D /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				FA889BDD20C828AD00A67F47 /* MoviesVC.swift */,
+				FAFFDE7220C9D04C00BD023D /* DetailsVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA889BDE20C828AD00A67F47 /* MoviesVC.swift in Sources */,
+				FAFFDE7320C9D04C00BD023D /* DetailsVC.swift in Sources */,
 				FA57896920C84D6F00CA3D12 /* MovieCVCell.swift in Sources */,
 				FAFFDE6E20C8796600BD023D /* Movie.swift in Sources */,
 				FA889BDC20C828AD00A67F47 /* AppDelegate.swift in Sources */,
