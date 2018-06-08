@@ -2,11 +2,13 @@
 
 Repositorio com código Swift/iOS do desafio da SKY para iOS Developer.
 
-<h2>Screen shots:</h2>
+
+SCREEN SHOTS:
 
 * App Icon
 
-![Scheme](ScreenShots/Icone.png)
+![Scheme](/ScreenShots/Icone.png)
+
 ![alt tag](https://bitbucket.org/KesleyRibeiro/desafio-sky-ios/src/master/ScreenShots/Icone.png)
 
 
