@@ -5,7 +5,6 @@ target 'Sky Movies' do
    
   pod 'Alamofire'
   pod 'AlamofireImage'
-  #pod 'SwiftyJSON'
   pod 'SwiftMessages'  
 
   target 'Sky MoviesTests' do
