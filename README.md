@@ -2,6 +2,8 @@
 
 Repositorio com código Swift/iOS do desafio da SKY para iOS Developer.
 
+###### API disponibilizada no desafio é essa: https://sky-exercise.herokuapp.com/api/Movies 
+
 
 ### SCREEN SHOTS:
 
