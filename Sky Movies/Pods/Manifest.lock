@@ -2,24 +2,24 @@ PODS:
   - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
-  - SwiftyJSON (3.1.4)
+  - SwiftMessages (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
-  - SwiftyJSON
+  - SwiftMessages
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
-    - SwiftyJSON
+    - SwiftMessages
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
-  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SwiftMessages: cd565e0e7d095584be1770c012c6b5be4183b5ee
 
-PODFILE CHECKSUM: 84721188ef2ec5d5485248055f9ee0a4ec706fe0
+PODFILE CHECKSUM: da58b20e3e4770315dd3ad63f146744fc85b42ed
 
 COCOAPODS: 1.5.2

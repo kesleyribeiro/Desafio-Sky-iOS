@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "68692EC57E5DE99751854CEE62C3051C"
-               BlueprintName = "SwiftyJSON"
+               BlueprintIdentifier = "DD6187DD322C0C43F86F271F98300609"
+               BlueprintName = "SwiftMessages-SwiftMessages"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libSwiftyJSON.a">
+               BuildableName = "SwiftMessages-SwiftMessages.bundle">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

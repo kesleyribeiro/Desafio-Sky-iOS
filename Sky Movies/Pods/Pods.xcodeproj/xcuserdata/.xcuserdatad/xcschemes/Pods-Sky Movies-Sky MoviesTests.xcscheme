@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8F118CA47841E47CCAFCFB98E1464837"
+               BlueprintIdentifier = "BA93F7ABA42031A63A6A3BA2E28BAE32"
                BlueprintName = "Pods-Sky Movies-Sky MoviesTests"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-Sky Movies-Sky MoviesTests.a">

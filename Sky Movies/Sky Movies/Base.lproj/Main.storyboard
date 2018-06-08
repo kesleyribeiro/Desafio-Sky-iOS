@@ -96,10 +96,18 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ktt-aH-Kvf"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No results. Try again later!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIG-nK-129">
+                                <rect key="frame" x="56" y="241" width="208.5" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.066666666669999999" green="0.090196078430000007" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="BIG-nK-129" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2EU-CS-qcN"/>
                             <constraint firstItem="m22-Uo-JAF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2ts-Co-dIu"/>
+                            <constraint firstItem="BIG-nK-129" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MVG-2G-c3R"/>
                             <constraint firstItem="m22-Uo-JAF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UWe-mr-ejb"/>
                             <constraint firstItem="m22-Uo-JAF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Z7P-VZ-Zvq"/>
                             <constraint firstItem="m22-Uo-JAF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lAU-Cq-KpT"/>
@@ -111,6 +119,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="moviesCollectionView" destination="m22-Uo-JAF" id="s37-YA-CXd"/>
+                        <outlet property="noResultsLabel" destination="BIG-nK-129" id="5DU-CC-gyb"/>
                         <segue destination="pdN-1B-0wQ" kind="show" identifier="showDetails" id="in9-al-yLZ"/>
                     </connections>
                 </viewController>
@@ -126,7 +135,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xng-ts-aZW">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xng-ts-aZW">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RfS-Bl-QO9" userLabel="Stack View Titles">

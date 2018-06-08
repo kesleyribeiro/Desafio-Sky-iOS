@@ -8,14 +8,14 @@
 
 import UIKit
 import Alamofire
-import SwiftyJSON
 
 class MoviesVC: UIViewController {
-
+    
     
     // MARK: - IBOutlets
     
     @IBOutlet weak var moviesCollectionView: UICollectionView!
+    @IBOutlet weak var noResultsLabel: UILabel!
     
     
     // MARK: - Properties
@@ -24,23 +24,25 @@ class MoviesVC: UIViewController {
     var numberOfMovies = Int()
     var selectedMovie: Movie?
     var detailsVC: DetailsVC?
+    var showAlerts = Alerts()
+    var timer = Timer()
     
     struct Storyboard {
         static let showDetails = "showDetails"
     }
-
+    
     lazy var refreshMovies: UIRefreshControl = {
         
         let refreshControl = UIRefreshControl()
         
         refreshControl.addTarget(self, action: #selector(MoviesVC.handleRefresh(_:)), for: UIControlEvents.valueChanged)
-
+        
         refreshControl.tintColor = UIColor.lightGray
         refreshControl.attributedTitle = NSAttributedString(string: "Loading movies data...")
         
         return refreshControl
     }()
-            
+    
     
     // MARK: - Lifecycle
     
@@ -55,27 +57,47 @@ class MoviesVC: UIViewController {
     
     // MARK: - Funtions
     
-    func getMovies() {
+    @objc func getMovies() {
         
         Alamofire.request(URL_API_SKY, method: .get).responseJSON
-            { response in
+            { response in                                
                 
-                let result = response.result
-                
-                if let dict = result.value as? [Dictionary<String, AnyObject>] {
-                
-                    // Update the number of movies
-                    self.numberOfMovies = dict.count
+                if response.result.isSuccess {
+                    let result = response.result
                     
-                    for obj in dict {
-                        let movie = Movie(movieDict: obj)
-                        self.movies.append(movie)
+                    if let dict = result.value as? [Dictionary<String, AnyObject>] {
+                        
+                        // Update the number of movies
+                        self.numberOfMovies = dict.count
+                        
+                        self.moviesCollectionView.isHidden = false
+                        self.noResultsLabel.isHidden = true
+                        
+                        for obj in dict {
+                            let movie = Movie(movieDict: obj)
+                            self.movies.append(movie)
+                        }
+                        self.moviesCollectionView.reloadData()
                     }
-                    self.moviesCollectionView.reloadData()
-            }
+                } else {
+                    
+                    self.showAlerts.exibirAlertaPersonalizado("Erro ao tentar obter os dados, tentar novamente mais tarde!", tipoAlerta: 2)
+                                        
+                    self.moviesCollectionView.isHidden = true
+                    self.noResultsLabel.isHidden = false
+                    
+                    // Call the function to try get data
+                    self.tryAgainGetData()
+                }
         }
     }
-    
+
+    func tryAgainGetData() {
+        
+        // After 15 seconds, execute the function to try to get the data
+        self.timer = Timer.scheduledTimer(timeInterval: 15, target: self, selector: #selector(self.getMovies), userInfo: nil, repeats: false)
+    }
+
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         
         // Call the function again
@@ -113,27 +135,27 @@ extension MoviesVC: UICollectionViewDataSource {
             return MovieCVCell()
         }
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-
+        
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "MovieHeaderView", for: indexPath) as! MovieHeaderView
-
+        
         headerView.titleCollectionLabel.text = "Uma seleção de filmes imperdíveis:"
-
+        
         return headerView
     }
     
-
+    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        
         if segue.identifier == Storyboard.showDetails {
             let details = segue.destination as! DetailsVC
             details.selectedMovie = selectedMovie
         }
     }
-
+    
 }
 
 

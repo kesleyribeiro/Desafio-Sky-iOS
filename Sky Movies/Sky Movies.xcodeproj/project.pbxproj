@@ -18,6 +18,7 @@
 		FA889BE620C828AF00A67F47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA889BE520C828AF00A67F47 /* Assets.xcassets */; };
 		FA889BE920C828AF00A67F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA889BE720C828AF00A67F47 /* LaunchScreen.storyboard */; };
 		FA889BF420C828B000A67F47 /* Sky_MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA889BF320C828B000A67F47 /* Sky_MoviesTests.swift */; };
+		FABE44F320CAF93F00EFE2E8 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE44F220CAF93F00EFE2E8 /* Alerts.swift */; };
 		FAFFDE6E20C8796600BD023D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFDE6D20C8796600BD023D /* Movie.swift */; };
 		FAFFDE7120C87C8B00BD023D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFDE7020C87C8B00BD023D /* Constants.swift */; };
 		FAFFDE7320C9D04C00BD023D /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFDE7220C9D04C00BD023D /* DetailsVC.swift */; };
@@ -53,6 +54,7 @@
 		FA889BEF20C828B000A67F47 /* Sky MoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sky MoviesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA889BF320C828B000A67F47 /* Sky_MoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sky_MoviesTests.swift; sourceTree = "<group>"; };
 		FA889BF520C828B000A67F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABE44F220CAF93F00EFE2E8 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		FAFFDE6D20C8796600BD023D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		FAFFDE7020C87C8B00BD023D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FAFFDE7220C9D04C00BD023D /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				FAFFDE7020C87C8B00BD023D /* Constants.swift */,
+				FABE44F220CAF93F00EFE2E8 /* Alerts.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				FA889BD420C828AD00A67F47 /* Sources */,
 				FA889BD520C828AD00A67F47 /* Frameworks */,
 				FA889BD620C828AD00A67F47 /* Resources */,
+				6C8DDDBA3F1511D846C924D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +211,7 @@
 				FA889BEB20C828B000A67F47 /* Sources */,
 				FA889BEC20C828B000A67F47 /* Frameworks */,
 				FA889BED20C828B000A67F47 /* Resources */,
+				D8E28688194E91D5C0BE1BE7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +282,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6C8DDDBA3F1511D846C924D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sky Movies/Pods-Sky Movies-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessages/SwiftMessages.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SwiftMessages.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sky Movies/Pods-Sky Movies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B8C373C827B0AC5A44AAE996 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +336,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D8E28688194E91D5C0BE1BE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sky Movies-Sky MoviesTests/Pods-Sky Movies-Sky MoviesTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessages/SwiftMessages.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SwiftMessages.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sky Movies-Sky MoviesTests/Pods-Sky Movies-Sky MoviesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -324,6 +365,7 @@
 				FAFFDE7320C9D04C00BD023D /* DetailsVC.swift in Sources */,
 				FA57896920C84D6F00CA3D12 /* MovieCVCell.swift in Sources */,
 				FAFFDE6E20C8796600BD023D /* Movie.swift in Sources */,
+				FABE44F320CAF93F00EFE2E8 /* Alerts.swift in Sources */,
 				FA889BDC20C828AD00A67F47 /* AppDelegate.swift in Sources */,
 				FAFFDE7120C87C8B00BD023D /* Constants.swift in Sources */,
 				FA889BE420C828AD00A67F47 /* Sky_Movies.xcdatamodeld in Sources */,
