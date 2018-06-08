@@ -77,7 +77,7 @@ class DetailsVC: UIViewController {
         
         let imageInCache = AutoPurgingImageCache()
         
-        if let image = imageInCache.image(withIdentifier: "imageInCache") {
+        if let image = imageInCache.image(withIdentifier: "imageDtsInCache") {
             self.movieImageView.image = image
             self.actyIndicator.stopAnimating()
         } else {
@@ -88,7 +88,7 @@ class DetailsVC: UIViewController {
                 
                 if let image = resposta.result.value {
                     self.movieImageView.image = image
-                    imageInCache.add(image, withIdentifier: "imageInCache")
+                    imageInCache.add(image, withIdentifier: "imageDtsInCache")
                 } else {
                     self.movieImageView.image = UIImage(named: "placeholder")
                     self.movieImageView.contentMode = .scaleAspectFill
