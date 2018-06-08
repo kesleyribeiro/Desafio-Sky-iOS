@@ -7,7 +7,7 @@ SCREEN SHOTS:
 
 * App Icon
 
-![Scheme](/ScreenShots/Icone.png)
+![alt text](ScreenShots/Icone.png)
 
 ![alt tag](https://bitbucket.org/KesleyRibeiro/desafio-sky-ios/src/master/ScreenShots/Icone.png)
 
