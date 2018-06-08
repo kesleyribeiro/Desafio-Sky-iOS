@@ -8,29 +8,29 @@ SCREEN SHOTS:
 * App Icon - Cine SKY
 
 ![alt text](ScreenShots/Icone.png)
-<br><br>
+![alt text]![alt text]
 
 
 * Cine SKY - 1
 ![alt text](ScreenShots/Home1.png)
-<br><br>
+![alt text]![alt text]
 
 
 * Cine SKY - 2
 ![alt text](ScreenShots/Home2.png)
-<br><br>
+![alt text]![alt text]
 
 
 * Cine SKY - 3
 ![alt text](ScreenShots/Home3.png)
-<br><br>
+![alt text]![alt text]
 
 
 * Details View - 1
 ![alt text](ScreenShots/Details1.png)
-<br><br>
+![alt text]![alt text]
 
 
 * Details View - 2
 ![alt text](ScreenShots/Details2.png)
-<br><br>
+![alt text]![alt text]
